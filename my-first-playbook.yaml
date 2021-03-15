@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Create another user
+    user: name=Sagore-singh state=absent
